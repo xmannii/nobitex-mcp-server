@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4"
+  },
+  "scripts": {
+    "start": "tsx server.ts",
+    "dev": "tsx --watch server.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "type": "module"
+}
