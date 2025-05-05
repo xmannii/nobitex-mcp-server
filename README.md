@@ -52,6 +52,15 @@ Replace `/path/to/this/repo` with the actual path to this repository on your com
 
 4. Restart Claude Desktop
 
+
+
+## Running evals
+
+The evals package loads an mcp client that then runs the index.ts file, so there is no need to rebuild between tests. You can load environment variables by prefixing the npx command. Full documentation can be found [here](https://www.mcpevals.io/docs).
+
+```bash
+OPENAI_API_KEY=your-key  npx mcp-eval evals.ts tools/market.tools.ts
+```
 ## Example Prompts
 
 - "What are the current Bitcoin prices in rials?"
